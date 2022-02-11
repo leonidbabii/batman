@@ -1,0 +1,5 @@
+.hero {
+  @include bg-cover;
+
+  background-image: url("../../img/header-bg.jpg");
+}

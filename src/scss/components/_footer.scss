@@ -1,0 +1,27 @@
+.footer {
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  font-size: rem(14);
+  color: var(--dove-gray);
+  background-color: #030102;
+
+  &__wrapper {
+    @include flex-all-sb;
+  }
+
+  &__menu {
+    @include flex;
+
+    padding-left: 0;
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-right: rem(25);
+    }
+  }
+
+  &__menu-link {
+    color: var(--dove-gray);
+  }
+}

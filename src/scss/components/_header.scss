@@ -1,0 +1,37 @@
+.header {
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+
+  &__top {
+    @include flex-all-sb;
+  }
+
+  &__menu {
+    @include flex-v-center;
+  }
+
+  &__logo {
+    margin-right: rem(40);
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-right: rem(24);
+    }
+  }
+
+  &__menu-link {
+    color: var(--light-color);
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__menu-list,
+  &__social-list {
+    @include flex;
+  }
+}
